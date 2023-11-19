@@ -1,0 +1,89 @@
+body{
+    background-color:rgb(28, 18, 37);
+}
+/*header*/
+header{
+    background-color:rgb(59, 59, 59);
+    width:100%;
+}
+.ulHEADER{
+    text-align:right;
+    margin-right:50px;
+    font-family:'AR One Sans', sans-serif;
+    font-weight:700;
+    background-color:rgb(59, 59, 59);
+    margin-top:10px;
+}
+.link-HEADER-Here{
+    color:rgb(0, 21, 184);
+    margin-right:20px;
+    margin-top:15px;
+}
+.link-HEADER{
+    color:rgb(0, 13, 112);
+    margin-right:20px;
+    margin-top:15px;
+}
+.link-HEADER-Here:hover{
+    color:rgb(94, 103, 167);
+    text-decoration:underline;
+}
+.link-HEADER:hover{
+    color:rgb(94, 103, 167);
+    text-decoration:underline;
+}
+/*final do header*/
+.esquerda{
+    display:inline-block;
+}
+.direita{
+    display:inline-block;
+    background-color:rgb(53, 36, 69)
+}
+p{
+    color:azure;
+    font-family: 'Inter', sans-serif;
+    font-weight:600;
+}
+h1{
+    color:azure;
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+}
+h2{
+    color:rgb(132, 65, 65);
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+}
+h3{
+    color:rgb(132, 65, 65);
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+}
+a{
+    color:rgb(168, 255, 255);
+}
+/*tags*/
+.mencaodiscord{
+    background-color:#394370;
+    color:#C7CDFB;
+    border-radius:3px;
+    padding-left:1.5px;
+    padding-right:2px;
+}
+.mencaodiscord:hover{
+    color:#F9F8FF;
+    background-color:#4E66F1;
+}
+.falagithub{
+    color:rgb(1, 4, 9);
+    font-weight:700;
+}
+.div{
+    width:100%;
+    height:100%;
+}
+.tac{
+    text-align:center;
+}
+/*Não sei direito oque está acontecendo aqui 0_o, pelo menos deu certo*/

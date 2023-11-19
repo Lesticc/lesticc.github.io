@@ -1,0 +1,69 @@
+/*Necessários*/
+body{
+    background-color:rgb(28, 18, 37);
+}
+.tac{
+    text-align:center;
+}
+.mencaodiscord{
+    background-color:#394370;
+    color:#C7CDFB;
+    border-radius:3px;
+    padding-left:1.5px;
+    padding-right:2px;
+}
+.mencaodiscord:hover{
+    color:#F9F8FF;
+    background-color:#4E66F1;
+}
+header{
+    background-color:rgb(59, 59, 59);
+    width:100%;
+}
+.ulHEADER{
+    text-align:right;
+    margin-right:50px;
+    font-family:'AR One Sans', sans-serif;
+    font-weight:700;
+    background-color:rgb(59, 59, 59);
+    margin-top:10px;
+}
+.link-HEADER-Here{
+    color:rgb(0, 21, 184);
+    margin-right:20px;
+    margin-top:15px;
+}
+.link-HEADER{
+    color:rgb(0, 13, 112);
+    margin-right:20px;
+    margin-top:15px;
+}
+.link-HEADER-Here:hover{
+    color:rgb(94, 103, 167);
+    text-decoration:underline;
+}
+.link-HEADER:hover{
+    color:rgb(94, 103, 167);
+    text-decoration:underline;
+}
+.discord{
+    color:#1f2962;
+    
+}
+/**/
+/*texto*/
+h1, h2, h3, h4, h5, p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:700;
+    text-align:center;
+    color:#9693a8;
+}
+p{
+    color:aliceblue
+}
+/**/
+.forum{
+    margin-top:10px;
+    width:90%;
+    margin-left:5%;
+}

@@ -1,0 +1,46 @@
+p{
+    font-size:large;
+}.p{
+    margin-top:15px;
+    text-align:left;
+    margin-left:40px;
+    font-size:small;
+    color:rgb(200, 200, 200);
+    display:inline-block;
+    user-select:none;
+}.p:hover{
+    color:rgb(126, 126, 126);
+    transition-duration:1000ms;
+}
+h3{
+    color:rgb(111, 109, 180);
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+    text-align:left;
+    margin-left:30px;
+    font-size:23px;
+    user-select:none;
+}h3:hover{color:rgb(200,200,200);transition-duration:500ms;}
+.span3p{
+    font-size:smaller;
+    color:rgb(105, 105, 105)
+}
+.item{
+    display:inline-block;
+    margin-left:15px;
+    padding-right:2px;
+}
+.forum{
+    background-color:rgb(56, 56, 56);
+    width:50%;
+    margin-left:25%;
+    margin-top:30px;
+    border-radius:13px;
+}.conteudo{
+    padding-top:10px;
+    padding-bottom:10px;
+}.imagem{
+    padding-left:10px;
+}.apresentacao{
+    display:inline-block;margin-left:20px;
+}
