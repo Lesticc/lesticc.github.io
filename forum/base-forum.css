@@ -61,6 +61,12 @@ h1, h2, h3, h4, h5, p{
 p{
     color:aliceblue
 }
+.italic{
+    font-style:italic;
+}
+.bold{
+    font-weight:700;
+}
 /**/
 .forum{
     margin-top:10px;

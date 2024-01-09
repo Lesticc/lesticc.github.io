@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Calculadora 2000">
+    <meta property="og:site_name" content="https://lesticc.github.io/">
+    <meta property="og:description" content="Essa é a calculadora 2000! Diretamente do site de Lestic, porque não vem testar?">
+    <meta property="og:type" content="website">
+    <meta property="og:author" content="Lestic">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" href="./index/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index/css/import.css">
+    <link rel="stylesheet" href="./index/css/reset.css">
+    <link rel="stylesheet" href="./index/css/base.css">
+    <link rel="stylesheet" href="./index/css/calculadora2000-stylesheet.css">
+    <script src="./index/js/calculadora-2000/textos.js"></script>
+    <script src="./index/js/calculadora-2000/index.js"></script>
+    <title> :: Calculadora 2000 :: </title>
+</head>
+<body>
+    <header>
+        <br>
+          <ul class="ulHEADER">
+            <a href="./index.html" class="link-HEADER">Início</a>
+            <a href="./forum.html" class="link-HEADER">Fórum</a>
+            <a href="./calc.html" class="link-HEADER-Here">Calculadora</a>
+          </ul>
+        <br>
+        <br>
+    </header>
+    <noscript lang="en-us">You need to enable JavaScript to run this app.</noscript>
+    <div class="titulo">
+        <h1 style="text-align:center;" class="tituloh1">Calculadora 2000</h1>
+    </div>
+    <div class="calculadora">
+        <div class="calc-A">
+            <textarea id="textarea" class="textarea"></textarea>
+            <div class=botaodiv><button id="botao" class="botao">Botão do Cálculo</button></div>
+            <p id="resultado2" class="resultado" style="text-align:center;">Resultado: <span id="resultado"></span></p>
+            <br>
+            <br>
+        </div>
+    </div>
+    <p id="textos" class="textos">Mensagem base, algum erro aconteceu!</p>
+    <br>
+    <style>
+        .calculadora{
+            height:20%;
+            min-height:20vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-top:15px;
+        }
+        .botaodiv{
+            display:block;
+            justify-content:center;
+            align-items:center;
+        }
+        .textos{
+            text-align:center;
+            padding-bottom:50px;
+            margin-top:20px;
+        }
+        .botao{
+            display:block;
+            padding-bottom:5px;
+            margin-top:10px;
+            border-radius:13px;
+            border:0;
+            width:165px;
+            height:35px;
+            text-align:center;
+            font-weight:600;
+            background-color:#00c3ff;
+            color:#fff;
+            cursor:pointer;
+            font-size:14px;
+            font-family: 'Poppins', sans-serif;
+        }
+        textarea{
+            border-radius:3px;
+            font-family: 'Poppins', sans-serif;
+            width:165px;
+        }
+        .resultado{
+            display:block;
+        }
+    </style>
+    <footer>
+        <p style="text-align:center; color:aquamarine">Criado por: Lestic, Calculadora 2000 ©</p>
+    </footer>
+    <p style="text-align:center;">Ajuda: Lohran</p>
+</body>
+</html>
