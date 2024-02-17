@@ -18,6 +18,9 @@ var botao = document.getElementById("botao");
 var resultado = document.getElementById("resultado");
 var resultado2 = document.getElementById("resultado2");
 
+var pi = 3.1415926535
+var π = pi.valueOf(pi)
+
 botao.onclick = function() {
     // tudo q estiver aqui dentro vai acontecer quando clicar no botão
     if(eval(textarea.value) == undefined) {

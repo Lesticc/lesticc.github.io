@@ -74,6 +74,7 @@ a{
 .mencaodiscord:hover{
     color:#F9F8FF;
     background-color:#4E66F1;
+    cursor:pointer;
 }
 .falagithub{
     color:rgb(1, 4, 9);
