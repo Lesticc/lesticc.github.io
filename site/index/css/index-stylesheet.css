@@ -1,0 +1,25 @@
+.texto{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.margin5px{
+    margin:5px;
+}
+h1{
+    text-align:center;
+}
+p{
+    text-align:center;
+}
+.link-FMLLeus:hover{
+    color:rgb(203, 255, 255);
+    text-decoration-line:underline;
+}
+.ppm{
+    margin:10px;
+}
+.ppl{
+    margin:15px;
+    color:rgb(190, 190, 190)
+}

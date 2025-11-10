@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--Copiado da index da fmlleus xd-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./index/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index/css/import.css">
+    <link rel="stylesheet" href="./index/css/reset.css">
+    <link rel="stylesheet" href="./index/css/base.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            max-height:100%;
+            max-width:100%;
+        }
+        .Main{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            font-family:'Montserrat', 'Lato', 'Inter', sans-serif;
+            font-size:larger;
+            text-align:center;
+            margin-top:10vh;
+            padding:5vh;
+        }
+        .subtitle{
+            color:rgb(210, 210, 210);
+            margin-top:2vh;
+            font-size:medium;
+        }
+        .subtitle:hover{
+            color:rgb(177, 188, 218);
+            text-decoration-line:underline;
+            cursor:pointer;
+        }
+        .s2{
+            font-size:large;
+        }
+        .s2:hover{
+            color:rgb(210, 210, 210);
+            cursor:default;
+            text-decoration-line:none;
+        }
+    </style>
+    <title> :: Site do Lestok :: </title>
+</head>
+<body>
+    <div class="Main">
+        <classe>
+            <h1>Erro 404</h1>
+            <br><br>
+            <p>Parece que a página que você tentou entrar não existe! URL Requestada: <span id="url"><noscript>(Script desativado)</noscript></span></p>
+            <br>
+            <a class="subtitle" href="/">Página principal</a>
+            <br><br>
+            <p class="subtitle s2">Caso o erro persista, tente se conectar mais tarde ou entre em contato com o dono!</p>
+        </classe>
+    </div>
+    <script>
+        const currentURL = window.location.href.replace(/^https?:\/\//, '');
+        const url = document.getElementById('url')
+
+        url.innerText = currentURL;
+    </script>
+</body>
+</html>

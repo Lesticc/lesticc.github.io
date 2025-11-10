@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="O site do Lestic">
+        <meta property="og:site_name" content="https://lesticc.github.io/">
+        <meta property="og:description" content="Oi! Esse fórum eu falo sobre progamação e sites">
+        <meta property="og:type" content="website">
+        <meta property="og:author" content="Lestic">
+        <meta property="og:locale" content="pt_BR">
+        <link rel="icon" href="../index/images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../index/css/reset.css">
+        <link rel="stylesheet" href="../index/css/import.css">
+        <link rel="stylesheet" href="./base-forum.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"> <!--Lora-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <!--Poppins-->
+        <script src="../index/js/header.js"></script>
+        <title> :: Programação :: </title>
+    </head>
+    <body>
+        <header id="header">
+
+        </header>
+        <div class="forum">
+            <h1>Programação</h1>
+            <p class="data">Criado em 12/03/2024</p>
+            <p>Oi, faz tempo, não é mesmo? Só para me reconciliar com vocês, eu sou o Lestic, eu faço fóruns e alguns sitezins legais
+                como esse que você está usando. Então, de uns meses, mais ou menos de janeiro para agora, eu comecei a aprender progamação
+                e até estou desenvolvendo um jogo (que vou deixar mais para frente). Porém, oque eu queria passar mesmo aqui, era minha 
+                visão antes de começar a progamar e depois de começar a progamar, então vamos nessa aventura.
+            </p>
+            <br><br>
+            <p>Pelo final de 2023, em meados de outubro eu estava tentando começar a progamar, com a ajuda do meu amigo 
+                <span class="mencaodiscord">@Lohran</span>, como eu estava (e estou) fazendo sites naquela época, eu comecei com o JavaScript
+                com simples comandos de matemática, variáveis e mensagens para o console. Quando eu não sabia e também quando comecei, eu
+                achava a progamação um bicho de seis cabeças, algo super complicado, específico, que só os melhores entendiam.
+            </p>
+            <br>
+            <p>Será que você conseguiria entender esse código?</p>
+            <div class="codigo">
+                <div class="codigodois">
+                    <p class="pcodigo"><span class="const">const</span> <span class="variavel">botaog</span> = <span class="document">document</span><span class="gebi">.getElementById</span><span class="parenteses">(</span><span class="aspas">'botao'</span><span class="parenteses">)</span></p>
+                    <p class="pcodigo"><span class="const">const</span> <span class="variavel">resultado</span> = <span class="document">document</span><span class="gebi">.getElementById</span><span class="parenteses">(</span><span class="aspas">'resultado'</span><span class="parenteses">)</span></p>
+                    <br>
+                    <p class="pcodigo"><span class="const">let</span> <span class="document">frases</span> = <span class="caixa">[</span></p>
+                    <div class="paragrafo"><p class="pcodigo"><span class="aspas">`Eae, beleza?`</span>,</p></div>
+                    <div class="paragrafo"><p class="pcodigo"><span class="aspas">`Como vai?`</span>,</p></div>
+                    <div class="paragrafo"><p class="pcodigo"><span class="aspas">`Alôôô!`</span>,</p></div>
+                    <div class="paragrafo"><p class="pcodigo"><span class="aspas">`Lorem não é ipsum`</span>,</p></div>
+                    <div class="paragrafo"><p class="pcodigo"><span class="aspas">`O número Meleus é aproximadamente 2`</span>,</p></div>
+                    <div class="paragrafo"><p class="pcodigo"><span class="aspas">`oiiiiiiiiiiiiiiiiiiiiiiii`</span>,</p></div>
+                    <p class="pcodigo"><span class="caixa">]</span></p>
+                    <br>
+                    <p class="pcodigo"><span class="function">function</span> <span class="gebi">textosf</span><span class="parenteses">()</span> <span class="caixetes">{</span></p>
+                    <div class="paragrafo"><p class="pcodigo"><span class="gebi">setInterval</span><span class="parentesesroxo">(</span><span class="parentesesazul">()</span> <span class="setinha">=></span> <span class="caixetesazul">{</span></p>
+                    <div class="paragrafo"><p class="pcodigo"><span class="const">let</span> <span class="document">numeroGerado</span> = <span class="math">Math</span>.<span class="floor">floor</span><span class="parenteses">(</span><span class="math">Math</span>.<span class="random">Random</span><span class="parentesesroxo">()</span> * <span class="math">frases</span>.<span class="math">lenght</span><span class="parenteses">)</span>;</p>
+                    <p class="pcodigo"><span class="const">let</span> <span class="document">frase</span> = <span class="aspas">`</span><span class="cifrao">$</span><span class="caixetesazul">{</span><span class="document">frases</span><span class="caixetes">[</span><span class="document">numeroGerado</span><span class="caixetes">]</span><span class="caixetesazul">}</span><span class="aspas">`</span></p>
+                        <p class="pcodigo"><span class="htmljs">botao</span>.<span class="oninner">onClick</span> = <span class="function">function</span><span class="parenteses">()</span> <span class="caixetes">{</span></p>
+                        <p class="pcodigo"><span class="htmljs">resultado</span>.<span class="oninner">innerText</span> = <span class="aspas">`</span><span class="cifrao">$</span><span class="caixetesazul">{</span><span class="document">frase</span><span class="caixetesazul">}</span><span class="aspas">`</span></p>
+                        <p class="pcodigo"><span class="caixetes">}</span></p>
+                    </div>
+                        <p class="pcodigo"><span class="caixetesazul">}</span>, <span class="numero">1</span><span class="parentesesroxo">)</span>;</p>
+                    </div>
+                        <p class="pcodigo"><span class="caixetes">}</span></p>
+                        <br>
+                        <p class="pcodigo"><span class="gebi">textosf</span><span class="parenteses">()</span>;</p>
+                </div>
+            </div>
+            <br>
+            </div>
+            <div class="botao">   
+                <div class="botaodiv">        
+                    <button id="botao" title="Botão do código!" class="botaocss">Botão do Código</button>
+                    <p id="resultado" class="resultado"></p></div>
+            </div> 
+            <br><br>
+            <p>Eae, oque achou do código? Se você sabe um minímo de progamação, você deve ter achado fácil interpretar oque está escrito
+                mas se você não sabe nada sobre, deve ter ficado bem confuso não é? Bem, eu posso te explicar um pouco: o const ele define uma varíavel,
+                que usei para definir as varíaveis dos elementos do HTML, que seria o botão e o resultado. Depois no "let" eu abro uma string, que ela 
+                armazena valores, sendo assim eu podendo usar eles a qualquer momento. Depois disso, eu crio a função "textosf", que fará que quando 
+                eu rode ela, as coisas dentro dela irão funcionar, como já está dentro dela. Com o setInterval, eu faço com que a cada ? milissegundos 
+                uma função seja rodada, dentro dela eu defino o valor "numeroGerado" e "frase".
+            </p>
+            <br>
+            <p>Dentro dela, eu fiz um negócio que eu nunca vi, e nem sei se é comum, porém eu coloquei a função de que quando clicarem no botão dentro do 
+                setInterval porém, como é uma função que só acontece por um evento que não é o setInterval, funcionou tudo certo. O motivo de eu ter colocado
+                dentro, é que se fosse por fora, ele não reconheceria as varíaveis dentro dela. E por final, eu coloquei para rodar a função na última linha.
+            </p>
+            <br>
+            <p>Agora, vamos falar sobre meu jogo: como eu já tinha falado, eu achava a progamação, um monstro de 6 cabeças, porém agora fazendo mesmo, eu vi que 
+                não é algo assim, e sim bem mais simples do que eu pensava, como esse código que eu mostrei para vocês, eu faço em 1 ou 2 minutos no máximo. E tipo,
+                agora vendo mesmo, não está sendo tão difícil quanto eu imaginava progamar o joguinho. Se quiserem jogar, aqui estar o link: 
+                <a href="https://lesticc.github.io/fruitstore/">https://lesticc.github.io/fruitstore/</a> ou se você é daqueles que fica vendo o arquivo do progama, aqui 
+                está: <a href="https://github.com/Lesticc/fruitstore/blob/main/js/index.js">https://github.com/Lesticc/fruitstore/blob/main/js/index.js</a>. Obrigado por ler!
+            </p>
+            <br>
+            <p style="text-align:center; margin-top:30px;">Contato: <span class="mencaodiscord" style="margin-left:5px;">@lest1c</span></p>
+        </div>
+        <script>
+            const botaog = document.getElementById('botao')
+            const resultado = document.getElementById('resultado')
+
+            let frases = [
+                `Eae, beleza?`,
+                `Como vai?`,
+                `Alôôô!`,
+                `Lorem não é ipsum`,
+                `O número Meleus é aproximadamente 2`,
+                `oiiiiiiiiiiiiiiiiiiiiiiii`,
+            ]
+
+            function textosf() {
+                setInterval(() => {
+                    let numeroGerado = Math.floor(Math.random() * frases.length);
+                    let frase = `${frases[numeroGerado]}`
+                    botaog.onclick = function() {
+                    resultado.innerText = `${frase}`
+                    }
+                }, 1);
+            }
+
+            textosf();
+        </script>
+        <style>
+            .codigo{
+                display:flex;
+                align-items:left;
+                justify-content:left;
+                background-color:#1F1F1F;
+                margin-top:3vh;
+                height:100%;
+                width:100%;
+            }
+            .codigodois{
+                margin-left:2vh;
+                margin-top:2vh;
+                margin-bottom:2vh;
+                height:100%;
+                width:100%;
+            }
+            .pcodigo{
+                text-align:left;
+                color:#D4D4D4;
+                font-family:'Lora', sans-serif;
+            }
+            .botao{
+                height:100%;
+                width:100%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+            .botaocss{
+                margin-top:3vh;
+                height:7vh;
+                width:30vh;
+                font-family:'Poppins', sans-serif;
+                font-weight:700;
+                color:#f3f3f3;
+                background:linear-gradient(120deg, #73ddf7 0%, #8da2cd 100%);
+                border-top-left-radius:7px;
+                border-bottom-right-radius:7px;
+                cursor:pointer;
+                padding:10px;
+                border-width:0.2px;
+            }
+            .botaocss:hover{
+                background:linear-gradient(120deg, #63c8e1 0%, #7b8fb7 100%);
+                border-color:#ffffff;
+                transition:300ms;
+            }
+            .botaodiv{
+                display:block;
+            }
+            .resultado{
+                margin-top:1vh;
+            }
+            .paragrafo{
+                margin-left:2vh;
+            }
+            /*"Código"*/
+            .const{
+                color:#368CD6;
+            }
+            .variavel{
+                color:#44C1F1; 
+            }
+            .document{
+                color:#68CDFE;
+            }
+            .gebi{
+                color:#DCDCAA;
+            }
+            .parenteses{
+                color:#FFC814;
+            }
+            .aspas{
+                color:#CE9178;
+            }
+            .caixa{
+                color:#DBD700;
+            }
+            .function{
+                color:#569CD6;
+            }
+            .caixetes{
+                color:#FFD710;
+            }
+            .parentesesroxo{
+                color:#DA70B3;
+            }
+            .parentesesazul{
+                color:#1C8FFF;
+            }
+            .setinha{
+                color:#569CD6; 
+            }
+            .caixetesazul{
+                color:#1A9FDB;
+            }
+            .numero{
+                color:#94CEA8;
+            } 
+            .math{
+                color:#9CDCFE; 
+            }
+            .floor{
+                color:#D0DC9D;
+            }
+            .random{
+                color:#DCDC8B;
+            }
+            .cifrao{
+                color:#3F9CD6;
+            }
+            .htmljs{
+                color:#4FB4C5;
+            }
+            .oninner{
+                color:#DCDCAA;
+            }
+            .linha{
+                color:#6E7681;
+                margin-right:2vh;
+            }
+        </style>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+*{
+    font-family:'Roboto';
+    text-align:center;
+    color:var(--corTextos);
+}
+main{
+    align-items:center;
+    justify-content:center;
+}
+a{
+    font-family:'Open Sans'
+}

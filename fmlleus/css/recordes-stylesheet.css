@@ -1,0 +1,85 @@
+
+#grad {
+    background-image: linear-gradient(rgb(15, 24, 110), rgb(85, 42, 124));
+}
+
+body {
+      background-color: rgb(4, 8, 27);
+      width: 100%;
+      height: 100%;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #DBDBDB;
+    height: 60px;
+} 
+
+.logo {
+    padding: 13px;
+    text-align: 60px;
+}
+
+h1{
+    font-family: Roboto, sans-serif;
+    text-align:center;
+    color:#686eb3;
+    font-size:30px
+}
+
+
+
+p3{
+    font-family: Roboto, sans-serif;
+    text-align:left;
+    color:#686eb3;
+    font-weight:bold;
+}
+
+h2{
+    font-family: Roboto, sans-serif;
+    text-align:center;
+    color:#686eb3;
+    font-size:30px
+}
+
+a{
+    color: whitesmoke;
+    font-family: Roboto, sans-serif;
+    text-decoration:none;
+    color:#6572ff;
+}
+
+caption {
+    padding: 1px
+}
+
+p1 {
+    font-family: Roboto, sans-serif;
+    color:#e0e4d4;
+    text-align:center;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    color:#e0e4d4;
+    text-align:center;
+}
+
+div {
+    display: inline-block;
+}
+
+.link {
+    text-align:right;
+    margin-right:10px;
+    margin-top:10px;
+    font-family:'AR One Sans', sans-serif;
+    font-weight:700;
+}
+
+.linka {
+    margin:7px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Roboto&display=swap');

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index/css/import.css">
+    <link rel="stylesheet" href="./index/css/aboutme/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --background1:rgb(11, 25, 33);
+            --backgroundMenu:rgb(13, 32, 40);
+            --marginSpace:7%;
+            --corBotao:rgb(0, 163, 255);
+            --corSobreMim:rgb(70, 187, 255);
+        }
+        body{
+            background-color:var(--background1);
+            overflow-x:hidden;
+        }
+        ::-webkit-scrollbar { /* Largura do caminho por onde a scrollbar passa. */
+            width: 5px;
+        }
+        ::-webkit-scrollbar-thumb { /* Propriedades serão aplicadas a scrollbar. */
+            background-color: var(--corBotao);
+            border-radius: 20px;
+        }
+        ::-webkit-scrollbar-track { /* Cor do background por onde a scrollbar passa */
+            background-color: var(--backgroundMenu);
+        }
+        .sections{
+            display:flex;
+            flex-direction:row;
+            width:100%;
+        }
+        .section{
+            padding:5vh;
+        }
+        .section-1{
+            font-family:'Lato';
+            font-size:28px;
+            font-weight:700;
+            width:10%;
+            margin-left:var(--marginSpace);
+        }
+        .section-2{
+            display:flex;
+            font-size:large;
+            font-weight:400;
+            font-family:'Manrope', serif;
+            align-content:flex-end;
+            justify-content:flex-end;
+            width:90%;
+        }
+        .section-2 a{
+            margin-left:3vh;
+        }
+        .section-22{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            cursor:pointer;
+            display:none;
+            position:relative;
+            height:25px;
+            width:25px;
+            transition:0.3s ease-in-out;
+        }
+        .section-22 div{
+            background-color:white;
+            height:2.5px;
+            width:25px;
+            transition:0.3s ease-in-out;
+        }
+        #home{
+            font-family:'Lato';
+            padding:5vh;
+            margin-left:var(--marginSpace);
+            width:50%;
+        }
+        .home h1{
+            font-size:55px;
+        }
+        .home h2{
+            font-size:35px;
+            font-weight:400;
+            color:rgb(90, 195, 255);
+        }
+        .home p{
+            font-family:'Poppins';
+            font-size:18px;
+            text-align:left;
+        }
+        .imgBackground{
+            background-image:url('./index/images/aboutme/backgroundImages/ImagemBanner1360.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: center;
+        }
+        #h1, #h2, #h3{
+            position:absolute;
+            display:block;
+        }
+        #h1{
+            top:3px;
+        }
+        #h2{
+            opacity:1;            
+        }
+        #h3{
+            bottom:3px;
+        }
+        *{
+            margin:0;
+            padding:0;
+            text-decoration:none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color:white;
+        }
+        #menu{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-color:var(--backgroundMenu);
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            font-weight:700;
+            font-family:'Manrope', serif;
+            font-size:large;
+            transition:0.3s ease-in-out;
+            display:none;
+        }
+        .menu{
+            display:flex;
+            flex-direction:column;
+            transition:0.3s ease-in-out;
+        }
+        .menu a{
+            margin-top:3px;
+            padding:3px;
+        }
+        .botoes{
+            display:flex;
+        }
+        .botoes button{
+            transition:0.3s;
+            width:220px;
+            height:60px;
+            text-align:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+            border-radius:5px;
+            border:2px solid var(--corBotao);
+            background:transparent;
+            font-size:20px;
+        }
+        .botoes button:hover{
+            transition:0.3s;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px 2px var(--corBotao);
+            background-color:var(--corBotao)
+        }
+        #botaoSobre{
+            margin-left:25px;
+        }
+        .links{
+            display:flex;
+        }
+        .link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid var(--corBotao);
+            transition: 0.3sease-in-out;
+            cursor: pointer;
+            background:transparent;
+            font-size:20px;
+            transition:0.3s;
+        }
+        .linkA{
+            margin-right:10px;
+            margin-top:160px;
+        }
+        .link:hover{
+            box-shadow: 0 0 15px 2px var(--corBotao);
+            transition:0.3s;
+            background-color:var(--corBotao);
+        }
+        .link:hover i{
+            transition:0.3s;
+            color:white;
+        }
+        .link i{
+            transition:0.3s;
+            color:var(--corBotao);
+        }
+        #about{
+            margin-top:5vh;
+            font-family:'Manrope', 'Lato', serif;
+            text-align:center;
+            font-size:22px;
+        }
+        .blueAbout{
+            color:var(--corSobreMim)
+        }
+        .about img{
+            transition:0.3s;
+            width:260px;
+            height:260px;
+            margin-bottom:5vh;
+            border-radius:50%;
+        }
+        @media (max-width:730px){
+            #h1{
+                display:block;
+            } 
+            .section-22{
+                display:flex;
+            }
+            .section-21{
+                display:none;
+            }
+
+            .botoes button{
+                width:120px;
+                height:45px;
+                font-size:18px;
+            }
+
+            #home{
+                width:70%;
+            }
+            .home p{
+                text-align:left;
+            }
+        }
+        @media (max-width:980px){
+            .about img{
+                width:200px;
+                height:200px;
+            }
+            .botoes button{
+                width: 180px;
+                height: 60px;
+                font-size: 18px;
+            }
+            .imgBackground{
+                background-image:url('./index/images/aboutme/backgroundImages/ImagemBanner900.png')
+            }
+        }
+        @media (max-width:560px){
+            .botoes button{
+                width: 120px;
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/50d299b9c7.js" crossorigin="anonymous"></script>
+    <title>Meleus</title>
+    <meta http-equiv="refresh" content="0;url=https://lestic.site/">
+</head>
+    <body>
+        <div class=website>
+            <div id="menu">
+                <div class="menu">
+                    <a href="#Home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contacts">Contatos</a>
+                </div>
+            </div>
+            <main>
+                <div class="imgBackground">
+                    <header id="Home">
+                        <div class="sections">
+                            <div class="section section-1"> 
+                                <p>Miguel</p>
+                            </div>
+                            <div class="section section-2">
+                                <div class="section-21">
+                                    <a href="#Home">Início</a>
+                                    <a href="#about">Sobre</a>
+                                    <a href="#projects">Projetos</a>
+                                    <a href="#contacts">Contatos</a>
+                                </div>
+                                <div class="section-22">
+                                    <div id="h1"></div>
+                                    <div id="h2"></div>
+                                    <div id="h3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div id="home">
+                        <div class="home">
+                            <h1>Olá! Eu sou o Miguel</h1>
+                            <h2>Desenvolvedor Front-End</h2>
+                            <br><br>
+                            <p>
+                                Desde uma ideia de um site, amei a programação, e comecei então com ela. Sei escrever códigos em HTML, CSS, JS e em Java.
+                            </p>
+                            <br><br>
+                            <div class="botoes">
+                                <a href="#contacts"><button id="botaoContatos">Contatos</button></a>
+                                <a href="#about"><button id="botaoSobre">Sobre</button></a>                                
+                            </div>
+                            <div class="links">
+                                <a class="linkA" href="https://x.com/meleusgamer" target="_blank"><button class="link link-x"><i class="fa-brands fa-x-twitter"></i></button></a>
+                                <a class="linkA" href="https://instagram.com/oleusatico" target="_blank"><button class="link link-instagram"><i class="fa-brands fa-instagram"></i></button></a>
+                                <a class="linkA" href="https://discord.com/users/756185293933248681" target="_blank"><button class="link link-discord"><i class="fa-brands fa-discord"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="about">
+                    <div class="about">
+                        <h1>Sobre <span class="blueAbout">Mim</span></h1>
+                        <br>
+                        <img src="./index/images/aboutme/Lestic/Lestic_IA.jpeg"> <!-- Se alguém quiser fazer uma foto, estou aceitando-->
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="./index/js/aboutme/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+p{
+    font-size:large;
+}
+.p:not(:hover){
+    transition:0.7s;
+    margin-top:15px;
+    text-align:left;
+    margin-left:40px;
+    font-size:small;
+    color:rgb(200, 200, 200);
+    display:inline-block;
+    user-select:none;
+}
+.p:hover{
+    color:rgb(126, 126, 126);
+    transition-duration:1000ms;
+    font-size:small;
+    margin-left:40px;
+    margin-top:15px;
+    text-align:left;
+    display:inline-block;
+}
+h3:not(:hover){
+    transition:0.7s;
+    color:rgb(111, 109, 180);
+    font-family: 'Inter', sans-serif;
+    font-weight:700;
+    text-align:left;
+    margin-left:30px;
+    font-size:23px;
+    user-select:none;
+}
+h3:hover{
+    color:rgb(200,200,200);transition-duration:500ms;
+    font-weight:700;
+    text-align:left;
+    margin-left:30px;
+    font-size:23px;
+    user-select:none;
+}
+.span3p{
+    font-size:smaller;
+    color:rgb(105, 105, 105)
+}
+.listaForums{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.forum{
+    background-color:rgb(56, 56, 56);
+    margin-top:3vh;
+    margin-bottom:2vh;
+    border-radius:2vh;
+    padding-bottom:1vh;
+    padding-top:1vh;
+    padding-right:2vh;
+}
+.conteudo{
+    padding:1vh;
+}
+.apresentacao{
+    display:flex;
+    justify-content:left;
+    align-content:left;
+}
+.tap{
+    margin-top:1vh;
+}

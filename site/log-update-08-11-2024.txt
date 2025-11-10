@@ -1,0 +1,2 @@
+- Página de aboutme.html adicionada, porém por enquanto é só um redirecionamento
+- Easter egg adicionado ("meleus" na calculadora)

@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --corBackgroundClaro: rgb(208, 208, 208);
+    --corBackgroundEscuro: rgb(20, 20, 20);
+
+    --corSubtituloClaro: rgb(168, 168, 179);
+}
+body{
+    background-color: var(--corBackgroundEscuro);
+}
+header{
+    margin-bottom:20px;
+    background-color:var(--corBackgroundHeaderEscuro);
+}
+main{
+    display:flex;
+    flex-direction:column;
+}
+.Jornal{
+    padding:4vh;
+    width:70vw;
+}
+.item{
+    margin-top:4vh;
+}
+h1{
+    color:var(--corBackgroundClaro);
+    font-size:38px;
+}
+p{
+    font-size:20px;
+}
+h2{
+    color:var(--corSubtituloClaro)
+}
+.link a{
+    color:var(--corBackgroundClaro);
+    text-decoration:none;
+    font-weight:700;
+    font-size:18px;
+}
+.itens{
+    display:flex;
+    flex-direction:column;
+}
+.secoes{
+    display:flex;
+    flex-direction:row;
+}
+p a{
+    color:rgb(144, 162, 175);
+    text-decoration-line:underline;
+}

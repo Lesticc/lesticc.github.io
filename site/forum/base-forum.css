@@ -1,0 +1,82 @@
+/*Necessários*/
+:root{
+    --cor-link-header-here:rgb(245, 246, 255);
+    --cor-link-header-padrao:rgb(181, 185, 220);
+    --cor-link-header-hover:rgb(191, 199, 255);
+}
+
+body{
+    background-color:rgb(28, 18, 37);
+}
+.tac{
+    text-align:center;
+}
+.mencaodiscord{
+    background-color:#394370;
+    color:#C7CDFB;
+    border-radius:3px;
+    padding-left:1.5px;
+    padding-right:2px;
+}
+.mencaodiscord:hover{
+    color:#F9F8FF;
+    background-color:#4E66F1;
+    cursor:pointer;
+}
+header{
+    background-color:rgb(59, 59, 59);
+    width:100%;
+}
+.ulHEADER{
+    text-align:right;
+    margin-right:50px;
+    font-family:'AR One Sans', sans-serif;
+    font-weight:700;
+    background-color:rgb(59, 59, 59);
+    margin-top:10px;
+}
+.link-HEADER-Here{
+    color:var(--cor-link-header-here);
+    margin-right:20px;
+    margin-top:15px;
+}
+.link-HEADER{
+    color:var(--cor-link-header-padrao);
+    margin-right:20px;
+    margin-top:15px;
+}
+.link-HEADER-Here:hover{
+    color:var(--cor-link-header-hover);
+    text-decoration:underline;
+}
+.link-HEADER:hover{
+    color:var(--cor-link-header-hover);
+    text-decoration:underline;
+}
+.discord{
+    color:#1f2962;
+}
+/**/
+/*texto*/
+h1, h2, h3, h4, h5, p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:700;
+    text-align:center;
+    color:#9693a8;
+}
+p{
+    color:aliceblue
+}
+.italic{
+    font-style:italic;
+}
+.bold{
+    font-weight:700;
+}
+/**/
+.forum{
+    margin-top:10px;
+    width:90%;
+    margin-left:5%;
+}
+.data{color:#5c5a64;font-size:smaller;margin-bottom:10px;}

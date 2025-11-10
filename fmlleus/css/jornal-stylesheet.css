@@ -1,0 +1,32 @@
+.home{
+    margin-top:20px;
+    margin-left:15px;
+}
+figcaption{
+    font-size:20px;
+    font-family:"Poppins", sans-serif;
+    color: rgb(195, 195, 217);
+}
+.jornal{
+    padding:7px;
+    background-color: rgb(8, 13, 37);
+    border-radius:5px;
+    margin-left:14px;
+    margin-top:20px;
+}.jornal img{
+    border-radius:10px;
+}
+.jornal:hover{
+    padding:7px;
+    background-color: rgb(13, 19, 47);
+    border-radius:5px;
+    transition:200ms;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');

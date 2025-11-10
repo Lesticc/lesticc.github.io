@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Lestic, Portfólio, Dev, Dev Front-End, Front-End, Developer, Desenvolvedor, Sites, Site, Programador, Lestok, Meleus"/>
+    <meta property="og:title" content="Portfólio do Lestic - Desenvolvedor Front-end">
+    <meta property="og:site_name" content="https://lestic.site/">
+    <meta property="og:description" content="Olá! Eu sou o Lestic, também conhecido na internet como Meleus, ou na vida real, Miguel. Sou um desenvolvedor front-end e esse é meu portfólio!">
+    <meta name="twitter:title" content="Portfólio do Lestic - Desenvolvedor Front-end">
+    <meta name="twitter:description" content="Olá! Eu sou o Lestic, também conhecido na internet como Meleus, ou na vida real, Miguel. Sou um desenvolvedor front-end e esse é meu portfólio!">
+    <meta property="og:type" content="website">
+    <meta property="og:author" content="Lestic">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" href="./main/assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./main/css/reset.css">
+    <link rel="stylesheet" href="./main/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Lestic</title>
+</head>
+<body>
+    <noscript>
+        Por favor ative o script!
+    </noscript>
+    <div id="inicio"></div>
+    <header>
+        <div class="headerMainContent">
+            Lestic
+        </div>
+        <div class="headerRightContent pcRC">
+            <a href="#inicio">
+                Início
+            </a>
+            <a href="#habilidades">
+                Habilidades
+            </a>
+            <a href="#projetos">
+                Projetos
+            </a>
+            <a href="#contatos">
+                Contato
+            </a>
+            <a id="colorButton" onclick="changeColor()"></a>
+        </div>
+        <div class="headerRightContent mbRC">
+            <div class="hamburguer" onclick="hamburguer()//ambuga">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+            <a id="colorButtonMob" onclick="changeColor()"></a>
+        </div>
+    </header>
+    <menu>
+        <a href="#inicio" onclick="hamburguer()">
+            Início
+        </a>
+        <a href="#habilidades" onclick="hamburguer()">
+            Habilidades
+        </a>
+        <a href="#projetos" onclick="hamburguer()">
+            Projetos
+        </a>
+        <a href="#contatos" onclick="hamburguer()">
+            Contatos
+        </a>
+    </menu>
+    <main>
+        <section class="firstSection">
+            <div class="left">
+                <div class="title">
+                    <h2>
+                        Olá! Eu sou o Lestic <img src="https://avatars.githubusercontent.com/u/83370672" alt="Foto de perfil do github" title="Foto de perfil do github">
+                    </h2>
+                    <p>
+                        Dev Front-End
+                    </p>
+                </div>
+                <div class="aboutme">
+                    Desenvolvedor front-end dedicado a criar soluções digitais que sejam funcionais e eficientes.
+                    Minha paixão pela programação vem de família, inspirado pela minha mãe biológica,
+                    e reflete meu compromisso com qualidade e aprendizado contínuo. <!-- < I have breaked lines here, so it would be easier to edit > -->
+                </div>
+                <div class="socialMedia">
+                    <a target="_blank" href="https://instagram.com/oleusatico"><i class="fa-brands fa-instagram"></i></a> <!-- Instagram -->
+                    <a target="_blank" href="https://bsky.app/profile/lesticc.bsky.social"><i class="fa-brands fa-bluesky"></i></a> <!-- Bluesky   -->
+                    <a target="_blank" href="https://github.com/lesticc"><i class="fa-brands fa-github"></i></a> <!-- GitHub    -->
+                </div>
+                <div class="coolButton">
+                    <a href="#projetos">Veja meus principais projetos aqui!</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="cappuccino">
+                    <img src="./main/assets/img/caneca.png" alt="Cappuccino" id="cappuccino"> <!-- Renderizado por Lohran :D -->
+                    <p>Cappuccino (Bem melhor que café)</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="habilidades">
+            <div class="title"> <!-- HTML, CSS, JS, REACT, JAVA, PYTHON, BLENDER, FIGMA -->
+                <h2>Habilidades</h2>
+                <p>Não só o front-end, mas muito mais coisas!</p>
+            </div>
+            <div class="skillList" id="skillList"><!-- Dinâmicamente criado pelo JS--></div>
+            <p class="note">(As porcentagens são levadas em conta com o quanto que eu já mexi com isso e o que eu sei mexer nisso, comparado a profissionais.)</p>
+        </section>
+        <hr>
+        <section class="thirdSection" id="projetos">
+            <div class="title">
+                <h2>
+                    Projetos
+                </h2>
+                <p>Meus principais projetos!</p>
+            </div>
+            <div class="projectList" id="projectList"> <!-- Também dinamicamente criado pelo JS -->
+
+            </div>
+        </section>
+        <hr>
+        <section class="fourthSection" id="contatos">
+            <div class="title">
+                <h2>
+                    Contato
+                </h2>
+            </div>
+            <div class="note">
+                <p>Você pode me contatar pelas minhas redes socials ou e-mail!</p>
+            </div>
+            <div class="contacts">
+                <div class="contact">
+                    <i class="fa-brands fa-discord"></i>Discord: lest1c / <a href="https://discord.gg/zQX437mant">discord.gg/zQX437mant</a>
+                </div>
+                <div class="contact">
+                    <i class="fa-brands fa-instagram"></i>Instagram: @oleusatico
+                </div>
+                <div class="contact">
+                    <i class="fa-brands fa-bluesky"></i>BlueSky: lestic.site
+                </div>
+                <div class="contact">
+                    <i class="fa-solid fa-envelope"></i>E-mail: <a href="mailto:omeleusalt@gmail.com?subject=Olá!%20Gostaria%20de%20falar%20com%20você.">omeleusalt@gmail.com</a>
+                </div>
+            </div>
+            <div class="note note-2">
+                <p>De preferência use e-mail ou discord para respostas mais rápidas.</p>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>
+            &copy; 2025 Lestic. Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/5360ef20c9.js" crossorigin="anonymous"></script>
+    <script src="./main/js/projects.js"></script>
+    <script src="./main/js/skills.js"></script>
+    <script src="./main/js/index.js"></script>
+</body>
+</html>
