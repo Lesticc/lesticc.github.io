@@ -24,9 +24,9 @@ var headerElemento3 = `<br>
 <br>`
 var headerElemento = `<br>
   <ul class="ulHEADER">
-    <a href="/index.html" class="link-HEADER">Início</a>
-    <a href="/forum.html" class="link-HEADER">Fórum</a>
-    <a href="/calc.html" class="link-HEADER">Calculadora</a>
+    <a href="/site/index.html" class="link-HEADER">Início</a>
+    <a href="/site/forum.html" class="link-HEADER">Fórum</a>
+    <a href="/site/calc.html" class="link-HEADER">Calculadora</a>
   </ul>
 <br>
 <br>`
